@@ -1,0 +1,40 @@
+name: Build libserver Module
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-server-module:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc make
+
+      - name: Build libserver.so
+        run: |
+          mkdir -p build/modules
+          gcc -std=c11 -O2 -Wall -Wextra -Wpedantic \
+            -D_GNU_SOURCE \
+            -fPIC \
+            -shared \
+            -I. \
+            -o build/modules/libserver.so \
+            libserver.c
+
+      - name: Check shared library
+        run: |
+          file build/modules/libserver.so
+          nm -D build/modules/libserver.so | grep green_module_init
+
+      - name: Upload libserver.so
+        uses: actions/upload-artifact@v4
+        with:
+          name: greenServe-server-module-linux-x86_64
+          path: build/modules/libserver.so
+          if-no-files-found: error
