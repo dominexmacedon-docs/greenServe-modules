@@ -12,7 +12,7 @@ The first directory that can be created or used is selected automatically.
 ### Makefile
 
 ```makefile
-LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.0/greenServe-server-module-linux-x86_64.zip
+LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.1/greenServe-server-module-linux-x86_64.zip
 
 TMP_DIR := /tmp/greenServe-libserver-install
 ZIP_FILE := $(TMP_DIR)/greenServe-server-module-linux-x86_64.zip
@@ -76,7 +76,7 @@ sudo make install
 The Makefile downloads:
 
 ```text
-https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.0/greenServe-server-module-linux-x86_64.zip
+https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.1/greenServe-server-module-linux-x86_64.zip
 ```
 
 It extracts:
