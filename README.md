@@ -26,7 +26,7 @@ Currently published modules:
 Current release:
 
 ```text
-libserver-v1.0.2
+libserver-v1.0.1
 ```
 
 Package:
@@ -282,7 +282,7 @@ The Makefile downloads the ZIP package, extracts `libserver.so`, and installs it
 ### Makefile
 
 ```makefile
-LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.2/greenServe-server-module-linux-x86_64.zip
+LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.1/greenServe-server-module-linux-x86_64.zip
 
 TMP_DIR := /tmp/greenServe-libserver-install
 ZIP_FILE := $(TMP_DIR)/greenServe-server-module-linux-x86_64.zip
@@ -352,7 +352,7 @@ sudo make install
 The Makefile downloads:
 
 ```text
-https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.2/greenServe-server-module-linux-x86_64.zip
+https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.1/greenServe-server-module-linux-x86_64.zip
 ```
 
 It extracts:
@@ -1584,7 +1584,7 @@ sudo make install
 ### Combined Makefile
 
 ```makefile
-LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.2/greenServe-server-module-linux-x86_64.zip
+LIBSERVER_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/libserver-v1.0.1/greenServe-server-module-linux-x86_64.zip
 GSNUM_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/gsnum-v1.0.0/greenServe-gsnum-module-linux-x86_64.zip
 GSVOCAB_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/gsvocab-v1.0.0/greenServe-gsvocab-module-linux-x86_64.zip
 GSVECTOR_URL := https://github.com/dominexmacedon-docs/greenServe-modules/releases/download/gsvector-v1.0.0/greenServe-gsvector-module-linux-x86_64.zip
@@ -1786,7 +1786,7 @@ This removes all published greenServe native modules from the supported system m
 ## libserver
 
 ```text
-Version: libserver-v1.0.2
+Version: libserver-v1.0.1
 Package: greenServe-server-module-linux-x86_64.zip
 Library: libserver.so
 ```
